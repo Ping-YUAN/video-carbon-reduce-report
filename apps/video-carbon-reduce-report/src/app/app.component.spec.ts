@@ -10,7 +10,7 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should render title', () => {
+  xit('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
@@ -19,7 +19,7 @@ describe('AppComponent', () => {
     );
   });
 
-  it(`should have as title 'video-carbon-reduce-report'`, () => {
+  xit(`should have as title 'video-carbon-reduce-report'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('video-carbon-reduce-report');

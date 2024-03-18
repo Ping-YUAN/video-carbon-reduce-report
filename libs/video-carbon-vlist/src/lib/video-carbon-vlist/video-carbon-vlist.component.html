@@ -1,0 +1,3 @@
+<h2>Video Center</h2>
+<lib-video-carbon-action [tags]="tags()" (filterChanged)="onFilterChanged($event)" (generateReport) ="generateReport()"></lib-video-carbon-action>
+<lib-video-carbon-card-list [videos]="(videos | async)" [filter]="filter()" (videoSelected)="onVideoSelected($event)"></lib-video-carbon-card-list>

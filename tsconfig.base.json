@@ -14,7 +14,21 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@video-carbon-reduce-report/shared": ["libs/shared/src/index.ts"],
+      "@video-carbon-reduce-report/video-carbon-nav": [
+        "libs/video-carbon-nav/src/index.ts"
+      ],
+      "@video-carbon-reduce-report/video-carbon-report": [
+        "libs/video-carbon-report/src/index.ts"
+      ],
+      "@video-carbon-reduce-report/video-carbon-services": [
+        "libs/video-carbon-services/src/index.ts"
+      ],
+      "@video-carbon-reduce-report/video-carbon-vlist": [
+        "libs/video-carbon-vlist/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

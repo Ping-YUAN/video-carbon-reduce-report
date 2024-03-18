@@ -1,0 +1,3 @@
+@for (item of filteredVideos(); track $index) {
+    <lib-video-carbon-card [video]="item" (videoChecked)="onVideoChecked($event)"></lib-video-carbon-card>
+}

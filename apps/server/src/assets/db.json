@@ -1,0 +1,465 @@
+{
+    "videos":[
+        {
+            "id": 5598,
+            "name": "FACEBOOK_BOUYGUES_ULTYM_15s_VF_16-9_WEB",
+            "duration": 15,
+            "size": 28501260,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13809,
+                    "size": 6266565,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 302,
+                    "dossier": "Meta"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5599,
+            "name": "TF1_BOUYGUES_ULTYM_30s_VF_16-9_WEB",
+            "duration": 30,
+            "size": 673030420,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13811,
+                    "size": 8075684,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 180,
+                    "dossier": "TF1"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5600,
+            "name": "SAMSUNG_BOUYGUES_ULTYM_30s_VF_16-9_WEB",
+            "duration": 30,
+            "size": 57221234,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13810,
+                    "size": 30084329,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 315,
+                    "dossier": "Samsung"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5601,
+            "name": "YOUTUBE_BOUYGUES_ULTYM_15s_VF_16-9_WEB",
+            "duration": 15,
+            "size": 321030996,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13812,
+                    "size": 4033027,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 177,
+                    "dossier": "Youtube"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5602,
+            "name": "TF1_BOUYGUES_ULTYM_15s_VF_16-9_WEB",
+            "duration": 15,
+            "size": 321030996,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13813,
+                    "size": 4033027,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 180,
+                    "dossier": "TF1"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5603,
+            "name": "TF1_BOUYGUES_ULTYM_30s_VF_16-9_WEB_NO_MS",
+            "duration": 30,
+            "size": 656772468,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13816,
+                    "size": 6887018,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 180,
+                    "dossier": "TF1"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5604,
+            "name": "SAMSUNG_BOUYGUES_ULTYM_15s_VF_16-9_WEB",
+            "duration": 15,
+            "size": 28501260,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13814,
+                    "size": 15182827,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 315,
+                    "dossier": "Samsung"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5606,
+            "name": "TF1_BOUYGUES_ULTYM_15s_VF_16-9_WEB_NO_MS",
+            "duration": 15,
+            "size": 308018244,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13817,
+                    "size": 3341723,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 180,
+                    "dossier": "TF1"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5607,
+            "name": "YOUTUBE_BOUYGUES_ULTYM_30s_VF_16-9_WEB",
+            "duration": 30,
+            "size": 673030420,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13818,
+                    "size": 6438362,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 177,
+                    "dossier": "Youtube"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5608,
+            "name": "MEDIASQUARE_BOUYGUES_ULTYM_15s_VF_16-9_WEB",
+            "duration": 15,
+            "size": 321030996,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13819,
+                    "size": 4032973,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 435,
+                    "dossier": "MEDIASQUARE"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5609,
+            "name": "MEDIASQUARE_BOUYGUES_ULTYM_30s_VF_16-9_WEB",
+            "duration": 30,
+            "size": 673030420,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13820,
+                    "size": 8075684,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 435,
+                    "dossier": "MEDIASQUARE"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5610,
+            "name": "TWITCH_BOUYGUES_ULTYM_15s_VF_16-9_WEB",
+            "duration": 15,
+            "size": 28501260,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13821,
+                    "size": 9653530,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 179,
+                    "dossier": "Twitch"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5614,
+            "name": "YOUTUBE_BOUYGUES_ULTYM_15s_VA_16-9_WEB_YOUTUBE",
+            "duration": 15,
+            "size": 308351748,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13830,
+                    "size": 3957479,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 177,
+                    "dossier": "Youtube"
+                  },
+                  {
+                    "id": 436,
+                    "dossier": "Digital selected"
+                  },
+                  {
+                    "id": 437,
+                    "dossier": "Skippable"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          },
+          {
+            "id": 5615,
+            "name": "YOUTUBE_BOUYGUES_ULTYM_30s_VA_16-9_WEB_YOUTUBE",
+            "duration": 30,
+            "size": 660428036,
+            "video_quality": "1920x1080",
+            "encoder":[
+                {
+                    "id": 13831,
+                    "size": 8102197,
+                    "quality": "1920x1080"
+                  }
+            ],
+            "dossiers":[
+                {
+                    "id": 177,
+                    "dossier": "Youtube"
+                  },
+                  {
+                    "id": 434,
+                    "dossier": "DIGITAL-selected"
+                  },
+                  {
+                    "id": 437,
+                    "dossier": "Skippable"
+                  },
+                  {
+                    "id": 440,
+                    "dossier": "Nouveau code - Wifi N°1"
+                  }
+            ]
+          }
+    ],
+    
+    "rapport": [
+        {
+            "id": 1,
+            "data":[
+                {
+                    "Dossier-N1": "Nouveau code - Wifi N°1",
+                    "Dossier-N2": "DIGITAL-selected",
+                    "Dossier-N3": "Samsung",
+                    "Dossier-N4": "",
+                    "Nom-video": "SAMSUNG_BOUYGUES_ULTYM_30s_VF_16-9_WEB",
+                    "Resolution": "1920x1080",
+                    "impression": 110000,
+                    "Poids-unitaire-source": 0.057221234,
+                    "Total-poids-source": 6294.33574,
+                    "Emission-CO2-source": 274.433038264,
+                    "Poids-unitaire-Encodee": 0.030084329,
+                    "Total-poids-Encodee": 3309.27619,
+                    "Emission-Co2-Encodee": 144.284441884,
+                    "Gain-carbone": 130.13614674479,
+                    "Reduction-poids": 47.42
+                  },
+                  {
+                    "Dossier-N1": "Nouveau code - Wifi N°1",
+                    "Dossier-N2": "DIGITAL-selected",
+                    "Dossier-N3": "TF1",
+                    "Dossier-N4": "",
+                    "Nom-video": "TF1_BOUYGUES_ULTYM_30s_VF_16-9_WEB_NO_MS",
+                    "Resolution": "1920x1080",
+                    "impression": 10000,
+                    "Poids-unitaire-source": 0.656772468,
+                    "Total-poids-source": 6567.72468,
+                    "Emission-CO2-source": 286.352796048,
+                    "Poids-unitaire-Encodee": 0.006887018,
+                    "Total-poids-Encodee": 68.87018,
+                    "Emission-Co2-Encodee": 3.002739848,
+                    "Gain-carbone": 283.3460916895,
+                    "Reduction-poids": 98.95
+                  },
+                  {
+                    "Dossier-N1": "Nouveau code - Wifi N°1",
+                    "Dossier-N2": "DIGITAL-selected",
+                    "Dossier-N3": "Meta",
+                    "Dossier-N4": "",
+                    "Nom-video": "FACEBOOK_BOUYGUES_ULTYM_15s_VF_16-9_WEB",
+                    "Resolution": "1920x1080",
+                    "impression": 73000,
+                    "Poids-unitaire-source": 0.02850126,
+                    "Total-poids-source": 2080.59198,
+                    "Emission-CO2-source": 90.713810328,
+                    "Poids-unitaire-Encodee": 0.006266565,
+                    "Total-poids-Encodee": 457.459245,
+                    "Emission-Co2-Encodee": 19.945223082,
+                    "Gain-carbone": 70.765843436873,
+                    "Reduction-poids": 78.01
+                  }
+            ]
+        }
+    ]
+      
+    
+  }

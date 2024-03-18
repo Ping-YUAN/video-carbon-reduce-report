@@ -1,0 +1,12 @@
+<div>
+<mat-form-field>
+    <mat-select [formControl]="videoTagForm" multiple>
+    @for(tag of tags(); track tag) {
+    <mat-option [value]="tag">{{ tag }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
+
+<button mat-raised-button (click)="readyToGenerateReport()">Generate Report</button>
+
+</div>

@@ -1,0 +1,17 @@
+@for (item of videos(); track $index) {
+    <p>
+        Source size: {{ item.size | fileSize}}
+    </p>
+    <p>Impression: {{impression()}}</p>
+    <p>Total souce size: {{ totalSize(item.size, impression()) | fileSize }}</p>
+    <p> Emission CO2: {{ emission(totalSize(item.size, impression())) }} kg</p>
+
+    @for (encodedItem of item.encoder; track $index) {
+        <p>Encoded size: {{ encodedItem.size | fileSize}}</p>
+        <p>Total Encoded size: {{ totalSize(encodedItem.size, impression()) | fileSize}}</p>
+        <p>Total Emission CO2: {{ emission(totalSize(encodedItem.size, impression())) }} kg</p>
+        <p>Gain carbon: {{ emission(totalSize(item.size, impression())) - emission(totalSize(encodedItem.size, impression()))}} kg</p>
+        <p>Reduce rate: {{ 1 - emission(totalSize(encodedItem.size, impression())) / emission(totalSize(item.size, impression()))  | percent }}</p>
+    }
+   
+}

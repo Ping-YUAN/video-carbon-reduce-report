@@ -1,0 +1,11 @@
+:host, 
+lib-video-carbon-report-generate{
+    .video-report-distribute-method{
+        margin-top: 16px;
+    }
+    mat-dialog-actions{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+}
