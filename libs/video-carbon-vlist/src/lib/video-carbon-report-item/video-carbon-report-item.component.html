@@ -1,24 +1,24 @@
 @for (item of videos(); track $index) {
     <p>Video Name: {{item.name}}</p>
-    <!-- @if (!impression()) {
+    @if (!autoImpression()) {
         <mat-form-field>
             <mat-label>Impression total:</mat-label>
             <input matInput type="number" [formControl]="impressionFormControl">
           </mat-form-field>
-    } -->
+    }
     <p>
         Source size: {{ item.size | fileSize}}
     </p>
-    <p>Impression: {{impression()}}</p>
-    <p>Total souce size: {{ totalSize(item.size, impression()) | fileSize }}</p>
-    <p> Emission CO2: {{ emission(totalSize(item.size, impression())) }} kg</p>
+    <p>Impression: {{impressionValue()}}</p>
+    <p>Total souce size: {{ totalSize(item.size, impressionValue()) | fileSize }}</p>
+    <p> Emission CO2: {{ emission(totalSize(item.size, impressionValue())) }} kg</p>
 
     @for (encodedItem of item.encoder; track $index) {
         <p>Encoded size: {{ encodedItem.size | fileSize}}</p>
-        <p>Total Encoded size: {{ totalSize(encodedItem.size, impression()) | fileSize}}</p>
-        <p>Total Emission CO2: {{ emission(totalSize(encodedItem.size, impression())) }} kg</p>
-        <p>Gain carbon: {{ emission(totalSize(item.size, impression())) - emission(totalSize(encodedItem.size, impression()))}} kg</p>
-        <p>Reduce rate: {{ 1 - emission(totalSize(encodedItem.size, impression())) / emission(totalSize(item.size, impression()))  | percent }}</p>
+        <p>Total Encoded size: {{ totalSize(encodedItem.size, impressionValue()) | fileSize}}</p>
+        <p>Total Emission CO2: {{ emission(totalSize(encodedItem.size, impressionValue())) }} kg</p>
+        <p>Gain carbon: {{ emission(totalSize(item.size, impressionValue())) - emission(totalSize(encodedItem.size, impressionValue()))}} kg</p>
+        <p>Reduce rate: {{ 1 - emission(totalSize(encodedItem.size, impressionValue())) / emission(totalSize(item.size, impressionValue()))  | percent }}</p>
     }
    
 }

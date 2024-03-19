@@ -1,4 +1,10 @@
-import { Component, Inject, OnInit, signal } from '@angular/core';
+import {
+  Component,
+  Inject,
+  OnInit,
+  ViewEncapsulation,
+  signal,
+} from '@angular/core';
 import { CommonModule, PercentPipe } from '@angular/common';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import {
@@ -20,7 +26,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { debounceTime } from 'rxjs';
 import { VideoCarbonService } from '@video-carbon-reduce-report/video-carbon-services';
-import { FileSizePipe } from '../video-carbon-card/video-size.pipe';
+
 @Component({
   selector: 'lib-video-carbon-report-generate',
   standalone: true,
@@ -50,10 +56,8 @@ export class VideoCarbonReportGenerateComponent implements OnInit {
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: VideoItem[],
-    private videoCarbonService: VideoCarbonService
-  ) // private fileSizePipe: FileSizePipe,
-  // private percentage: PercentPipe
-  {
+    private videoCarbonService: VideoCarbonService // private fileSizePipe: FileSizePipe, // private percentage: PercentPipe
+  ) {
     this.generateTreeData(data);
     this.dataSource.data = this.reportTreeData();
   }

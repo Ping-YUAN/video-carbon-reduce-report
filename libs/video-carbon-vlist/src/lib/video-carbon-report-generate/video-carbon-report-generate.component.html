@@ -19,7 +19,7 @@
         <p>      {{node.name}}  </p>
 
         @if (node.videos) {
-          <lib-video-carbon-report-item [videos]="node.videos" [impression]="node.impression/node.videos.length"></lib-video-carbon-report-item>
+          <lib-video-carbon-report-item [videos]="node.videos" [impression]="node.impression/node.videos.length" [autoImpression]="automaticAssignImpression()"></lib-video-carbon-report-item>
         }
       </div>
 

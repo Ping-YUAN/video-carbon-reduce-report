@@ -1,9 +1,10 @@
-import { Component, OnInit, input, signal } from '@angular/core';
+import { Component, OnInit, computed, input, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VideoItem } from '@video-carbon-reduce-report/shared';
 import { FileSizePipe } from '../video-carbon-card/video-size.pipe';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'lib-video-carbon-report-item',
@@ -14,6 +15,7 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     ReactiveFormsModule,
     FormsModule,
+    MatInputModule,
   ],
   templateUrl: './video-carbon-report-item.component.html',
   styleUrl: './video-carbon-report-item.component.scss',
@@ -21,7 +23,17 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 export class VideoCarbonReportItemComponent implements OnInit {
   videos = input<VideoItem[]>();
   impression = input<number>();
-  impressionValue = signal<number>(0);
+  autoImpression = input<boolean>();
+
+  impressionFromForm = signal<number>(0);
+
+  impressionValue = computed(() => {
+    if (this.autoImpression()) {
+      return this.impression();
+    } else {
+      return this.impressionFromForm();
+    }
+  });
   impressionFormControl = new FormControl();
   totalSize(size: number, impression: number | undefined): number {
     if (impression) {
@@ -32,7 +44,7 @@ export class VideoCarbonReportItemComponent implements OnInit {
   }
   ngOnInit(): void {
     this.impressionFormControl.valueChanges.subscribe((data) => {
-      this.impressionValue.set(data);
+      this.impressionFromForm.set(data);
     });
   }
   emission(size: number): number {
