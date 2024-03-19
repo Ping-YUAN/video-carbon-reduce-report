@@ -1,6 +1,6 @@
 # VideoCarbonReduceReport
 
-![demo](./asset/holter-demo.gif)
+![demo](./asset/video-carbon.gif)
 
 ## to run app
 
