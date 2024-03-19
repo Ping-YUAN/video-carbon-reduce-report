@@ -1,8 +1,12 @@
 import {
+  AfterContentChecked,
+  AfterContentInit,
+  AfterViewChecked,
+  AfterViewInit,
   Component,
   Inject,
   OnInit,
-  ViewEncapsulation,
+  ViewChild,
   signal,
 } from '@angular/core';
 import { CommonModule, PercentPipe } from '@angular/common';
@@ -46,11 +50,15 @@ import { VideoCarbonService } from '@video-carbon-reduce-report/video-carbon-ser
   templateUrl: './video-carbon-report-generate.component.html',
   styleUrl: './video-carbon-report-generate.component.scss',
 })
-export class VideoCarbonReportGenerateComponent implements OnInit {
+export class VideoCarbonReportGenerateComponent
+  implements OnInit, AfterViewInit
+{
   automaticAssignImpression = signal<boolean>(false);
   reportTreeData = signal<TreeNode[]>([]);
   treeControl = new NestedTreeControl<TreeNode>((node) => node.children);
   dataSource = new MatTreeNestedDataSource<TreeNode>();
+
+  @ViewChild('tree') tree: any;
 
   impressionFormControl = new FormControl('');
 
@@ -60,7 +68,9 @@ export class VideoCarbonReportGenerateComponent implements OnInit {
   ) {
     this.generateTreeData(data);
     this.dataSource.data = this.reportTreeData();
+    this.treeControl.dataNodes = this.reportTreeData();
   }
+
   ngOnInit(): void {
     this.impressionFormControl.valueChanges
       .pipe(debounceTime(500))
@@ -73,6 +83,11 @@ export class VideoCarbonReportGenerateComponent implements OnInit {
         this.reportTreeData.set([...reportTree]);
       });
   }
+
+  ngAfterViewInit(): void {
+    this.tree.treeControl.expandAll();
+  }
+
   setImpressionForNode(treeNode: TreeNode, impression: number) {
     treeNode.impression = impression;
     const subImpression = impression / treeNode.children.length;
@@ -92,6 +107,7 @@ export class VideoCarbonReportGenerateComponent implements OnInit {
     );
     return result;
   }
+
   toggleSlide() {
     this.automaticAssignImpression.set(!this.automaticAssignImpression());
   }
@@ -116,6 +132,7 @@ export class VideoCarbonReportGenerateComponent implements OnInit {
             impression: 0,
             level: i,
             expandable: true,
+            isExpanded: true,
           };
 
           treeNode.push(newNode);
@@ -135,12 +152,12 @@ export class VideoCarbonReportGenerateComponent implements OnInit {
     });
     this.reportTreeData.set(treeData);
   }
+
   saveReport() {
     const newReport: ReportItem = {
-      id: 999,
       data: this.getReportData(),
     };
-    // this.videoCarbonService.saveReport();
+    this.videoCarbonService.saveReport(newReport);
   }
 
   getReportData(): ReportDataItem[] {

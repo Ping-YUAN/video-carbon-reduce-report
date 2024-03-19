@@ -38,7 +38,7 @@ export interface ReportDataItem {
   'Reduction-poids': number;
 }
 export interface ReportItem {
-  id: number;
+  id?: number;
   data: ReportDataItem[];
 }
 

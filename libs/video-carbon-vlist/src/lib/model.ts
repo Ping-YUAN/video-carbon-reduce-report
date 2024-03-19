@@ -16,4 +16,5 @@ export interface TreeNode {
   videos?: VideoItem[];
   level: number;
   expandable: boolean;
+  isExpanded: boolean;
 }
