@@ -8,4 +8,33 @@ lib-video-carbon-report-generate{
         flex-direction: row;
         justify-content: end;
     }
+
+    mat-tree {
+        .report-tree-invisible {
+            display: none;
+          }
+          
+          .report-tree ul,
+          .report-tree li {
+            margin-top: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+          }
+          
+          /*
+           * This padding sets alignment of the nested nodes.
+           */
+          .report-tree .mat-nested-tree-node div[role=group] {
+            padding-left: 40px;
+          }
+          
+          /*
+           * Padding for leaf nodes.
+           * Leaf nodes need to have padding so as to align with other non-leaf nodes
+           * under the same parent.
+           */
+          .report-tree div[role=group] > .mat-tree-node {
+            padding-left: 40px;
+          }
+    }
 }

@@ -1,4 +1,11 @@
 @for (item of videos(); track $index) {
+    <p>Video Name: {{item.name}}</p>
+    <!-- @if (!impression()) {
+        <mat-form-field>
+            <mat-label>Impression total:</mat-label>
+            <input matInput type="number" [formControl]="impressionFormControl">
+          </mat-form-field>
+    } -->
     <p>
         Source size: {{ item.size | fileSize}}
     </p>
